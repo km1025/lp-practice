@@ -1,1 +1,11 @@
 @charset "utf-8";
+.nav{
+  ß
+}
+
+.contact{
+  color: #ffffff;
+  background-color:#6ba7eb;
+  font-size: 12px;
+  padding: 12px 14px;
+}
