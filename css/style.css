@@ -1,6 +1,14 @@
 @charset "utf-8";
-.nav{
-  ß
+
+.header{
+  background-color: #fff;
+  display: inline-block;
+}
+
+.fas fa-archway fa-3x{
+  padding: 15px;
+  color: #777;
+  justify-content: center;
 }
 
 .contact{
@@ -8,4 +16,89 @@
   background-color:#6ba7eb;
   font-size: 12px;
   padding: 12px 14px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.key-visual{
+  width: 100%;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  text-align: center;
+}
+
+.title{
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  padding-top: 400px;
+  padding-bottom: 30px;
+}
+
+.title2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 400px;
+}
+
+.work{
+  display: flex;
+  background-color: #e3f2fd;
+}
+
+.icon-1{
+  padding-top: 50px;
+  width: 250px;
+}
+
+/*WORKの文字のところ*/
+.beside{
+  float: right;
+  text-align: center;
+  margin: auto;
+}
+
+.title3{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding: 20px o 35px 0;
+}
+
+.title4{
+  font-size: 15px;
+  line-height: 18px;
+  word-break:break-all;
+}
+
+/*SKILLSのところ*/
+.skills{
+  background: #fff;
+}
+
+.title5{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.skills-lists{
+  display: grid;
+  width: 300px;
+  height: 300px;
+}
+
+.lists1{
+  padding: 0 50px 0 50px;
+}
+
+.lists2{
+  padding-top: 100px;
+  padding-bottom: 70px;
 }
