@@ -5,7 +5,7 @@
   display: inline-block;
 }
 
-.nav{
+.fas{
   padding: 15px;
   color: #777;
   justify-content: center;
@@ -55,7 +55,12 @@
 
 .icon-1{
   padding-top: 50px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.img{
+  width: 250px;
+  height: 250px;
 }
 
 .beside{
@@ -101,6 +106,8 @@
 
 .skill-lists{
   padding-top: 50px;
+  width: 300px;
+  height: 300px;
 }
 
 /*SELECT PLANのところ*/
