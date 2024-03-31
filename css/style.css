@@ -58,12 +58,12 @@
   width: 100%;
 }
 
-.img{
+.pc{
   width: 250px;
   height: 250px;
 }
 
-.beside{
+.inner{
   float: right;
   text-align: center;
   margin: auto;
@@ -102,6 +102,7 @@
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
   gap: 100px;
+  padding-bottom: 70px;
 }
 
 .skill-lists{
@@ -111,3 +112,54 @@
 }
 
 /*SELECT PLANのところ*/
+.plan{
+  background: #d0dfea;
+  margin-top: 70px;
+}
+
+.title6{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.table-area{
+  padding-bottom: 50px;
+}
+
+.cell-table{
+  table-layout: fixed;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cell-table tr,th,td{
+  border-collapse: collapse;
+  border: 1px solid #ffffff;
+  border-spacing:0;
+  text-align: center;
+  padding: 10px;
+}
+
+.cell-table th{
+  font-size: 16px;
+  line-height: 26px;
+  background: #6ba7eb;
+  border-left: 2px #fff;
+}
+
+.cell-table tbody td:first-child{
+  font-weight: bold;
+}
+
+.cell-table tbody tr:nth-child(2n-1){
+  background-color: #f9f9f9;
+}
+
+.cell-table tbody tr:nth-child(2n){
+  background-color: #e0efff;
+}
