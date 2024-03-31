@@ -1,14 +1,13 @@
 @charset "utf-8";
 
-.header{
+header{
   background-color: #fff;
-  display: inline-block;
 }
 
 .fas{
-  padding: 15px;
+  padding: 15px 0 15px 0;
   color: #777;
-  justify-content: center;
+  margin: auto;
 }
 
 .contact{
@@ -16,7 +15,6 @@
   background-color:#6ba7eb;
   font-size: 12px;
   padding: 12px 14px;
-  float: right;
 }
 
 .clearfix::after {
@@ -132,7 +130,7 @@
 
 .cell-table{
   table-layout: fixed;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,4 +160,31 @@
 
 .cell-table tbody tr:nth-child(2n){
   background-color: #e0efff;
+}
+
+/*SNS icon*/
+.sns{
+  background-color: #e3f2fd;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+
+.fab{
+  width: 185px;
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+  margin: 25px 0 25px 0;
+  text-align: center;
+}
+
+footer{
+  background-color: #cfd8dc;
+  padding: 20px 100px 20px 0;
+  text-align: right;
 }
