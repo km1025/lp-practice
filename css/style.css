@@ -22,7 +22,6 @@ header{
 }
 
 .navi-button{
-  border: none;
   float: right;
   align-content: center;
 }
@@ -32,6 +31,7 @@ header{
   background-color:#6ba7eb;
   font-size: 12px;
   padding: 12px 14px;
+  border: none;
 }
 
 .key-visual{
@@ -72,7 +72,6 @@ header{
 
 .pc{
   width: 250px;
-  height: 250px;
 }
 
 .work-text{
