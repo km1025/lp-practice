@@ -2,7 +2,7 @@
 
 .inner{
   width: 1100px;
-  margin: auto;
+  margin:0 auto;
 }
 
 header{
@@ -21,6 +21,10 @@ header{
   margin: auto;
 }
 
+.hamburger{
+  display: none;
+}
+
 .navi-button{
   float: right;
   align-content: center;
@@ -34,6 +38,13 @@ header{
   border: none;
 }
 
+/*ホバー：ボタン色変化*/
+.contact:hover{
+  background-color: #333;
+  transition: 0.3s;
+}
+
+/*背景PCのところ*/
 .key-visual{
   width: 100%;
   background-image: url(../img/keyvisual/keyvisual.jpg);
@@ -68,6 +79,7 @@ header{
 .icon-pc{
   padding-top: 50px;
   width: 40%;
+  text-align: center;
 }
 
 .pc{
@@ -75,9 +87,8 @@ header{
 }
 
 .work-text{
-  float: right;
+  margin-top: 20px;
   text-align: center;
-  margin: auto;
   width: 60%;
 }
 
@@ -114,13 +125,18 @@ header{
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
   gap: 100px;
-  padding-bottom: 70px;
+  padding:50px 0 70px 0;
 }
 
 .skill-lists{
-  padding-top: 50px;
   width: 300px;
   height: 300px;
+  opacity: 0.7;
+}
+
+/*ホバー時skill-listの透明度変化*/
+.skill-lists:hover{
+  opacity: 1.0;
 }
 
 /*SELECT PLANのところ*/
@@ -144,7 +160,7 @@ header{
 
 .cell-table{
   table-layout: fixed;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,6 +178,7 @@ header{
   line-height: 26px;
   background: #6ba7eb;
   border-left: 2px #fff;
+  white-space: nowrap
 }
 
 .cell-table tbody td:first-child{
@@ -188,6 +205,12 @@ header{
   justify-content: center;
 }
 
+/*ホバー時背景色変更*/
+.sns li:hover{
+  background-color: #fff;
+  transition: 0.5s;
+}
+
 .sns li{
   width: 185px;
   color: #8c8c8c;
@@ -203,4 +226,161 @@ footer{
   text-align: right;
   font-size: 10px;
   letter-spacing: 0.5px;
+}
+
+/* レスポンシブ対応　
+PCの横幅は1100px,SP,TABの横幅は97%
+TABのブレイクポイント:max-width: 1199px */
+
+/*TAB*/
+@media (max-width:1199px) {
+.inner{
+  width: 97%;
+}
+
+/*背景PCのところ*/
+.work{
+  width: 100%;
+}
+
+.title{
+  padding-top: 250px;
+}
+
+.title2{
+  padding-bottom: 250px;
+}
+
+/*WORKのところ*/
+.work-flex{
+  display: block;
+}
+.icon-pc{
+  padding-top: 50px;
+  width: 100%;
+  margin: auto;
+}
+
+.pc{
+  text-align: center;
+}
+
+.work-text{
+  float: none;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/*SKILLのところ*/
+.container{
+  display: flex;
+  grid-template-columns: none;
+  grid-template-rows:none;
+  gap:normal;
+  padding:50px 0 70px 0;
+  flex-direction: column;
+  align-items: center;
+  vertical-align:bottom;
+}
+
+.skill-lists{
+  vertical-align: middle;
+}
+
+.container li:nth-child(3n){
+  padding-bottom: 80px;
+}
+
+.container li:last-child{
+  padding-bottom: 0;
+}
+}
+
+
+/*　
+PCの横幅は1100px,SP,TABの横幅は97%
+SPのブレイクポイント:max-width:767px */
+
+/*SP*/
+@media(max-width:767px){
+.inner{
+  width: 97%;
+  margin: 0 auto;
+}
+
+.contact{
+  display: none
+}
+
+/*naviのところ*/
+.hamburger{
+  display: block;
+  margin: 20px;
+  text-align: center;
+  border:3px solid #333;;
+}
+
+.hb-icon{
+  width: 40px;
+  height: 40px;
+}
+
+/*key-visualのところ*/
+.title{
+  font-size: 40px;
+  padding-top: 200px;
+}
+
+.title2{
+  font-size: 30px;
+  padding-bottom: 200px;
+}
+
+/*SKILLのところ*/
+.container{
+  display: flex;
+  grid-template-columns: none;
+  grid-template-rows:none;
+  gap:normal;
+  padding:50px 0 70px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-lists{
+  vertical-align: middle;
+}
+
+.container li:nth-child(3n){
+  padding-bottom: 80px;
+}
+
+.container li:last-child{
+  padding-bottom: 0;
+}
+
+/*Planのところ*/
+
+.cell-table th{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.cell-table td{
+  font-size: 12px;
+}
+
+/*SNS*/
+.sns{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
 }
