@@ -49,6 +49,7 @@ header{
   width: 100%;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   text-align: center;
+  background-size: cover;
 }
 
 .title{
@@ -142,7 +143,6 @@ header{
 /*SELECT PLANのところ*/
 .plan{
   background: #d0dfea;
-  margin-top: 70px;
 }
 
 .title6{
@@ -356,7 +356,7 @@ SPのブレイクポイント:max-width:767px */
 }
 
 .container li:last-child{
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 /*Planのところ*/
